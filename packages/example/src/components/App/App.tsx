@@ -3,12 +3,14 @@ import React from "react";
 import Web3Provider from "components/Provider";
 import Header from "components/Header/Header";
 import { NFTs } from "components/NFT/NFT";
+import Wallets from "components/Wallet/Wallets";
 
 const App: React.FC = () => {
   return (
     <Web3Provider>
       <Header />
-      <NFTs />
+      {/* <NFTs /> */}
+      <Wallets type="flex" />
     </Web3Provider>
   );
 };
